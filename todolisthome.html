@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./todolisthomeStyle.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="to_do_list_content">
+            <div class="container">
+                <div class="to_do_list_content_in_content">
+                    <div class="to_do_list_content_title">
+                        To Do List
+                    </div>
+                    <div class="to_do_list_content_in_content_item">
+                        <div class="to_do_list_content_in_content_inp_item">
+                            <div class="to_do_list_content_in_content_inp_item_in_item_1">
+                                <input type="text" id='todolilstinp' oninput="inpChangeFunc(this.value)">
+                            </div>
+                            <div class="to_do_list_content_in_content_inp_item_in_item_2">
+                                <input type="submit" value="Add" onclick="inpclickFunc()">
+                            </div>
+                        </div>
+                        <div class="to_do_list_content_in_content_inp_item_2">
+                            <div class="to_do_list_content_in_content_inp_item_2_in_item_1">
+                                <input type="text" id='todolilstinpsec' placeholder="Search..." oninput="searchFunc(this.value)">
+                            </div>
+                        </div>
+                        <div id="to_do_list_content_in_content_txt_item_content">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="./todolisthomejs.js"></script>
+</body>
+
+</html>
